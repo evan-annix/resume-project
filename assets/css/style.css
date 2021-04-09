@@ -30,6 +30,24 @@
     background-color: #525252;
 }
 
+.active-page-index {
+    background-color: rgb(184, 101, 27);
+    display: inline-block;
+    vertical-align: top;
+}
+
+.active-page-resume {
+    background-color: rgb(124, 71, 146);
+    display: inline-block;
+    vertical-align: top;
+}
+
+.active-page-contact {
+    background-color: rgb(42, 122, 175);
+    display: inline-block;
+    vertical-align: top;
+}
+
 /*---------------------Special Paddings/Margins/Text*/
 
 h1,h2,h3,h4 {
