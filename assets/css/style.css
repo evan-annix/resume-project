@@ -109,9 +109,10 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 360px;
+    /*Removed Transition because it looks bad when switching tabs
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;       */
 }
 
 .name {
