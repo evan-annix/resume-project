@@ -82,7 +82,7 @@ h1,h2,h3,h4 {
 
 .section-column {
     display: table-cell;
-    padding: 0 30px 30px;
+    padding: 0 30px 100px;
     float: none;
 }
 
@@ -91,6 +91,10 @@ h1,h2,h3,h4 {
     font-weight: 300;
     margin-top: 25px;
     margin-bottom: 40px;
+}
+
+.bottom-text {
+    padding-bottom: 50px;
 }
 
 /*---------------------Heading*/
@@ -193,7 +197,6 @@ footer {
     background-color: #525252;
     color: #fafafa;
     min-height: 120px;
-    margin: 0;
 }
 
 .cv-pdf i {
@@ -235,6 +238,58 @@ footer {
 
 #footer-details {
     padding: 20px;
+}
+
+#footer-container {
+    display: block;
+}
+
+/*---------------------Work-History*/
+
+.history-heading {
+    color: #fafafa;
+    margin-bottom: 50px;
+}
+
+.timeline-item {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    color: #fafafa;
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: #fafafa;
+}
+
+.history-items {
+    margin-bottom: 30px;
 }
 
 /*---------------------Three Reasons*/
@@ -345,4 +400,15 @@ button[type="submit"] {
     margin: 0 auto;
     max-width: 50%;
     }
+
+    #main-content {
+    height: calc(100vh - 503px);
+    }   
+
+    footer {
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    }
+
 }
